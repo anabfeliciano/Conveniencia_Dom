@@ -1,2 +1,18 @@
-# Hamburgueria
-Sistema de hamburgueria desenvolvido em grupo para projeto acadêmico, com foco em gerenciamento de pedidos, cardápio e experiência do usuário utilizando tecnologias web.
+# Hamburgueria Web 🍔
+
+Projeto acadêmico desenvolvido em grupo com foco em um sistema para hamburgueria.
+
+## Funcionalidades
+- Cardápio digital
+- Sistema de pedidos
+- Área administrativa
+- Controle de clientes
+
+## Tecnologias
+- HTML
+- CSS
+
+## Equipe
+- Ana Beatriz
+- Gabriella 
+- João
