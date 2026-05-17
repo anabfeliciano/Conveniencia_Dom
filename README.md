@@ -8,7 +8,7 @@ Desenvolver um site funcional e visualmente atrativo para a **Conveniência DOM*
 ## 🚀 Funcionalidades
 - 🏠 Página Inicial  
 - 🛍️ Produtos  
-- 🚚 Delivery/Pedidos  
+- ⭐ Diferenciais  
 - 👤 Sobre Nós  
 - 📍 Contato e Localização  
 
