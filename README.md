@@ -1,18 +1,25 @@
-# Hamburgueria Web 🍔
+# 🛒 Conveniência DOM
 
-Projeto acadêmico desenvolvido em grupo com foco em um sistema para hamburgueria.
+Site institucional desenvolvido como projeto acadêmico da disciplina de Front-End, com foco na criação de uma interface moderna e responsiva para uma conveniência.
 
-## Funcionalidades
-- Cardápio digital
-- Sistema de pedidos
-- Área administrativa
-- Controle de clientes
+## ✨ Objetivo
+Desenvolver um site funcional e visualmente atrativo para a **Conveniência DOM**, apresentando seus produtos, informações do estabelecimento e formas de contato.
 
-## Tecnologias
-- HTML
-- CSS
+## 🚀 Funcionalidades
+- 🏠 Página Inicial  
+- 🛍️ Produtos  
+- 🚚 Delivery/Pedidos  
+- 👤 Sobre Nós  
+- 📍 Contato e Localização  
 
-## Equipe
-- Ana Beatriz
-- Gabriella 
+## 💻 Tecnologias Utilizadas
+- HTML5  
+- CSS3  
+
+## 🌐 Acesse o Site
+🔗 Site: https://anabfeliciano.github.io/Conveniencia_Dom/index.html
+
+## 👥 Equipe
+- Ana Beatriz  
+- Gabriella  
 - João
