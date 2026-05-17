@@ -9,6 +9,8 @@
 /* ======== BODY ======== */
 body {
   background: #111;
+  font-size: 30px;
+  color: white;
 }
 
 /* ======== HEADER ======== */
@@ -64,7 +66,7 @@ header h1{
   text-transform: uppercase;
 }
 
-strong {
+header strong {
   font-size: 50px;
   color: #f4b400;
 }
@@ -80,4 +82,14 @@ strong {
   height: auto;
 }
 
+main {
+  color: white;
+}
+
+main h1, strong{
+  text-transform: uppercase;
+  line-height: 0.9;
+  font-size: 25px;
+  padding: 10px;
+  }
 
