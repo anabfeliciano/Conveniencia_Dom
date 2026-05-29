@@ -1,27 +1,153 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOBRE NÓS</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="logo-container">
-        <img class="logo" src="imgs/carrinho.png" alt="">
-        <h1>Conveniência <br><strong>Dom</strong></h1>
-        </div>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="Produtos.html">Produtos</a></li>
-                <li><a href="Diferenciais.html">Diferenciais</a></li>
-                <li><a href="Sobre.html">Sobre Nós</a></li>
-                <li><a href="Contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+  <title>Conveniência Dom</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Caveat:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="stylesheet.css" />
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="header-container">
+
+    <!-- LOGO CLICÁVEL -->
+    <a href="index.html" class="logo">
+      <i class="fa-solid fa-cart-shopping yellow-text"></i>
+      <span>CONVENIÊNCIA <b class="yellow-text">DOM</b></span>
+    </a>
+
+    <!-- MENU -->
+    <nav>
+      <ul>
+        <li><a href="index.html">INÍCIO</a></li>
+        <li><a href="Produtos.html">PRODUTOS</a></li>
+        <li><a href="Diferenciais.html">DIFERENCIAIS</a></li>
+        <li><a href="Sobre_Nós.html">SOBRE NÓS</a></li>
+      </ul>
+    </nav>
+
+    <!-- BOTÃO -->
+    <a href="Contato.html" class="btn-header">
+      <i class="fa-solid fa-comments"></i>
+      FALE CONOSCO
+    </a>
+
+  </div>
+</header>
+
+<!-- ================= MAIN ================= -->
+<main>
+
+  <!-- ================= HERO (GENÉRICO) ================= -->
+  <section class="sobre">
+    <div class="sobre-conteudo">
+
+      <span class="subtitle yellow-text">
+        TÍTULO DA PÁGINA
+      </span>
+
+      <h1>
+        TEXTO PRINCIPAL DO HERO
+        <span class="yellow-text">DESTAQUE AQUI</span>
+      </h1>
+
+      <hr class="title-line" />
+
+      <p>
+        Este é um texto genérico para ser preenchido pelo seu grupo.
+        Aqui vocês podem descrever o conteúdo específico desta página,
+        seja produtos, serviços ou informações institucionais.
+      </p>
+
+    </div>
+
+    <div class="sobre-imagem">
+      <img src="imgs/Loja.png" alt="Imagem da Conveniência Dom" />
+    </div>
+  </section>
+
+  <!-- ================= CONTEÚDO ================= -->
+  <div class="container">
+
+    <!-- EXEMPLO DE SEÇÃO -->
+    <section>
+      <h2>SEÇÃO DA PÁGINA</h2>
+      <p>
+        Conteúdo específico da página vai aqui.
+      </p>
+    </section>
+
+  </div>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h4>
+        <i class="fa-solid fa-location-dot yellow-text"></i>
+        ENDEREÇO
+      </h4>
+      <p>
+        St. Hoteleiro Projeção E, 01<br>
+        Taguatinga Sul, Brasília - DF<br>
+        CEP: 72011-904
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>
+        <i class="fa-solid fa-clock yellow-text"></i>
+        HORÁRIO
+      </h4>
+      <p>
+        Segunda a Domingo<br>
+        08:00 às 03:00
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>
+        <i class="fa-brands fa-whatsapp yellow-text"></i>
+        WHATSAPP
+      </h4>
+      <p>
+        (61) 9219-0738
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>
+        <i class="fa-brands fa-instagram yellow-text"></i>
+        INSTAGRAM
+      </h4>
+      <p>
+        @convenienciadom.oficial
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Conveniência Dom - Todos os direitos reservados.</p>
+  </div>
+</footer>
+
 </body>
 </html>

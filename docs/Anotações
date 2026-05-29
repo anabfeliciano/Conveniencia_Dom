@@ -1,0 +1,87 @@
+VISÃO GERAL
+Unidade	Serve pra
+%	tamanho relativo ao pai
+vw	relativo à largura da tela
+rem	relativo ao tamanho base do site
+clamp()	tamanho responsivo inteligente
+max-width	limitar crescimento
+
+
+| Inglês    | Significado      |
+| --------- | ---------------- |
+| header    | topo             |
+| hero      | banner principal |
+| section   | seção            |
+| container | container        |
+| card      | cartão/bloco     |
+| footer    | rodapé           |
+| button    | botão            |
+| navbar    | menu             |
+
+
+| Termo     | Significado       |
+| --------- | ----------------- |
+| hero      | seção principal   |
+| wrapper   | envoltório        |
+| container | limite de largura |
+| card      | bloco visual      |
+| overlay   | camada sobreposta |
+| section   | seção             |
+| navbar    | menu              |
+| sidebar   | barra lateral     |
+| modal     | janela flutuante  |
+| banner    | destaque          |
+| grid      | grade             |
+| layout    | estrutura         |
+
+| Estrutura | Responsabilidade         | O que controla              | Exemplos CSS                     |
+| --------- | ------------------------ | --------------------------- | -------------------------------- |
+| `header`  | Estrutura global do topo | Fundo geral do header       | `background`, `background-color` |
+| `header`  | Sticky/fixo              | Grudar no topo ao rolar     | `position: sticky`, `top:0`      |
+| `header`  | Camada visual            | Ficar acima do conteúdo     | `z-index`                        |
+| `header`  | Limite externo           | Ocupar toda largura da tela | `width:100%`                     |
+| `header`  | Separação visual         | Linha inferior do menu      | `border-bottom`                  |
+| `header`  | Comportamento global     | Estrutura externa do topo   | `position`, `overflow`           |
+
+| Estrutura    | Responsabilidade     | O que controla                  | Exemplos CSS                   |
+| ------------ | -------------------- | ------------------------------- | ------------------------------ |
+| `.container` | Limitar largura      | Site não ficar gigante          | `max-width`                    |
+| `.container` | Centralizar conteúdo | Conteúdo no meio da tela        | `margin:0 auto`                |
+| `.container` | Espaço lateral       | Respiro nas bordas              | `padding`                      |
+| `.container` | Responsividade       | Adaptar em telas menores        | `%`, `max-width`               |
+| `.container` | Organização interna  | Estrutura principal do conteúdo | `display:flex`, `display:grid` |
+
+| Estrutura           | Responsabilidade         | O que controla              | Exemplos CSS         |
+| ------------------- | ------------------------ | --------------------------- | -------------------- |
+| `header .container` | Layout interno do header | Organização dos itens       | `display:flex`       |
+| `header .container` | Alinhamento vertical     | Centralizar logo/menu/botão | `align-items:center` |
+| `header .container` | Distribuição horizontal  | Espaço entre elementos      | `justify-content`    |
+| `header .container` | Altura interna           | Tamanho interno do topo     | `min-height`         |
+| `header .container` | Estrutura flexível       | Áreas proporcionais         | `flex:1`             |
+
+| Estrutura | Responsabilidade      | O que controla        | Exemplos CSS               |
+| --------- | --------------------- | --------------------- | -------------------------- |
+| `nav`     | Área do menu          | Centralização do menu | `justify-content:center`   |
+| `nav ul`  | Organização dos links | Links lado a lado     | `display:flex`             |
+| `nav ul`  | Espaçamento           | Distância entre links | `gap`                      |
+| `nav ul`  | Reset visual          | Remove bolinhas       | `list-style:none`          |
+| `nav a`   | Estilo dos links      | Cor e aparência       | `color`, `text-decoration` |
+
+| Estrutura         | Responsabilidade   | O que controla         | Exemplos CSS                             |
+| ----------------- | ------------------ | ---------------------- | ---------------------------------------- |
+| `.logo`           | Área da logo       | Espaço da esquerda     | `flex:1`                                 |
+| `.logo`           | Ícone + texto      | Alinhamento interno    | `display:flex`                           |
+| `.header-actions` | Área do botão      | Empurrar botão direita | `justify-content:flex-end`               |
+| `.btn`            | Aparência do botão | Visual do botão        | `background`, `padding`, `border-radius` |
+
+| Pergunta            | Onde normalmente fica |
+| ------------------- | --------------------- |
+| Fundo do topo?      | `header`              |
+| Sticky?             | `header`              |
+| Layout dos itens?   | `.container`          |
+| Limite de largura?  | `.container`          |
+| Links lado a lado?  | `nav ul`              |
+| Espaço entre links? | `gap`                 |
+| Centralização?      | `flex/grid`           |
+| Aparência do botão? | `.btn`                |
+
