@@ -445,7 +445,7 @@ nav a:hover::after {
 .card-text-overlay {
   position: absolute;
   left: 0;
-  bottom: -35px;
+  bottom: -50px;
 
   width: 100%;
 
