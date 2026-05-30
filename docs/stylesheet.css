@@ -181,18 +181,24 @@ nav a:hover::after {
 /* =========================================================
    HERO
 ========================================================= */
-.sobre {
+.sobre , .sobre-catalogo , .sobre-diferenciais {
   position: relative;
 
   display: flex;
   align-items: center;
 
-  min-height: 85vh;
-
   overflow: hidden;
 
   background: #000000;
   padding: 0 50px;
+}
+
+.sobre {
+  min-height: 85vh;
+}
+
+.sobre-catalogo {
+  min-height: 65vh;
 }
 
 /* ===== CONTEÚDO ===== */
@@ -542,6 +548,37 @@ nav a:hover::after {
 .banner-item p {
   color: var(--text-white);
   font-size: 0.9rem;
+}
+
+/* PRODUTOS */
+.grid-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin: 50px;
+}
+
+.categoria-coluna {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, max-content));
+  grid-auto-rows: max-content;
+  gap: 15px;
+}
+
+.card-produto {
+  background-color: #fff;
+  color: #000;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 /* =========================================================
    FOOTER
