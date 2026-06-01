@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,10 +10,12 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Caveat:wght@700&display=swap"
+    rel="stylesheet">
 
   <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="stylesheet.css" />
@@ -20,266 +23,178 @@
 
 <body>
 
-<!-- ================= HEADER ================= -->
-<header>
-  <div class="header-container">
+  <!-- ================= HEADER ================= -->
+  <header>
+    <div class="header-container">
 
-    <!-- LOGO CLICÁVEL -->
-    <a href="index.html" class="logo">
-      <i class="fa-solid fa-cart-shopping yellow-text"></i>
-      <span>CONVENIÊNCIA <b class="yellow-text">DOM</b></span>
-    </a>
+      <!-- LOGO CLICÁVEL -->
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-cart-shopping yellow-text"></i>
+        <span>CONVENIÊNCIA <b class="yellow-text">DOM</b></span>
+      </a>
 
-    <!-- MENU -->
-    <nav>
-      <ul>
-        <li><a href="index.html">INÍCIO</a></li>
-        <li><a href="Produtos.html">PRODUTOS</a></li>
-        <li><a href="Diferenciais.html">DIFERENCIAIS</a></li>
-        <li><a href="Sobre_Nós.html">SOBRE NÓS</a></li>
-      </ul>
-    </nav>
+      <!-- MENU -->
+      <nav>
+        <ul>
+          <li><a href="index.html">INÍCIO</a></li>
+          <li><a href="Produtos.html">PRODUTOS</a></li>
+          <li><a href="Diferenciais.html">DIFERENCIAIS</a></li>
+          <li><a href="Sobre_Nós.html">SOBRE NÓS</a></li>
+          <li><a href="Contato.html">CONTATO</a></li>
+        </ul>
+      </nav>
 
-    <!-- BOTÃO -->
-    <a href="Contato.html" class="btn-header">
-      <i class="fa-solid fa-comments"></i>
-      FALE CONOSCO
-    </a>
-
-  </div>
-</header>
-
-<!-- ================= MAIN ================= -->
-<main>
-
-  <!-- ================= HERO (GENÉRICO) ================= -->
-  <section class="sobre-catalogo">
-    <div class="sobre-conteudo">
-
-      <span class="subtitle yellow-text">
-        BEM VINDO
-      </span>
-
-      <h1>
-        TUDO O QUE VOCÊ PRECISA
-        <span class="yellow-text">EM UM SÓ LUGAR</span>
-      </h1>
-
-      <hr class="title-line" />
+      <!-- BOTÃO -->
+      <a href="https://wa.me/556192190738" class="btn-header" target="_blank">
+        <i class="fa-solid fa-comments"></i>
+        FALE CONOSCO
+      </a>
 
     </div>
+  </header>
 
-    <div class="sobre-imagem">
-      <img src="imgs/Loja.png" alt="Imagem da Conveniência Dom" />
-    </div>
-  </section>
+  <!-- ================= MAIN ================= -->
+  <main>
 
-  <!-- ================= CONTEÚDO ================= -->
-  <div class="container">
+    <!-- ================= HERO (GENÉRICO) ================= -->
+    <section class="sobre-catalogo">
+      <div class="sobre-conteudo">
 
-    <!-- EXEMPLO DE SEÇÃO -->
-    <section>
-      <h2>CATÁLOGO DE PRODUTOS</h2>
-      <p>
-        Separado por categorias, encontre aqui aquilo que você precisava!
-      </p>
+        <span class="subtitle yellow-text">
+          BEM VINDO
+        </span>
+
+        <h1>
+          TUDO O QUE VOCÊ PRECISA
+          <span class="yellow-text">EM UM SÓ LUGAR</span>
+        </h1>
+
+        <hr class="title-line" />
+
+      </div>
+
+      <div class="sobre-imagem">
+        <img src="imgs/Loja.png" alt="Imagem da Conveniência Dom" />
+      </div>
     </section>
 
-  </div>
+    <!-- ================= CONTEÚDO ================= -->
+    <!-- SEÇÃO DE PRODUTOS (VISÃO GERAL) -->
+    <section class="products-overview">
+      <h2 class="overview-title">NOSSOS <span>PRODUTOS</span></h2>
 
- <div class="grid-content">
-
-  <section class="categoria-coluna">
-    <h2>Cervejas & destilados</h2> <div class="grid-produtos">
-
-      <a href="https://wa.me/556192190738?text=Olá!%20Tenho%20interesse%20no%20produto:%20AMSTEL" class="card-produto">
-        <img src="imgs/amnstel.avif" alt="AMSTEL">
-        <div class="item-desc">
-          <h2>AMSTEL</h2>
-          <p>12x350 ML</p>
+      <div class="overview-cards-container">
+        <div class="overview-card">
+          <div class="overview-card-image">
+            <img src="https://images.unsplash.com/photo-1568644391669-a090f8719266?q=80&w=600" alt="Adega">
+          </div>
+          <div class="overview-card-content">
+            <div class="overview-card-header">
+              <div class="overview-icon-circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 22h6V10l-2-3V3a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v4l-2 3v12z" />
+                </svg>
+              </div>
+              <h3>ADEGA</h3>
+            </div>
+            <p class="overview-card-text">Cervejas, vinhos, destilados e drinks para todos os momentos.</p>
+          </div>
         </div>
-      </a>
 
-      <a href="https://wa.me/556192190738?text=Olá!%20Tenho%20interesse%20no%20produto:%20HEINEKEN%20LONG%20PCT" class="card-produto">
-        <img src="imgs/heineken.jfif" alt="HEINEKEN LONG PCT">
-        <div class="item-desc">
-          <h2>HEINEKEN LONG PCT</h2>
-          <p>24x330 ML</p>
+        <div class="overview-card">
+          <div class="overview-card-image">
+            <img src="https://images.unsplash.com/photo-1600456899121-68eda5705257?q=80&w=600" alt="Snacks">
+          </div>
+          <div class="overview-card-content">
+            <div class="overview-card-header">
+              <div class="overview-icon-circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 3h14l1 4v14H4V7l1-4z" />
+                  <path d="M4 7h16M9 11h6" />
+                </svg>
+              </div>
+              <h3>SNACKS</h3>
+            </div>
+            <p class="overview-card-text">Salgadinhos, chocolates, biscoitos e muito mais para matar a fome.</p>
+          </div>
         </div>
-      </a>
 
-      <a href="https://wa.me/556192190738?text=Olá!%20Tenho%20interesse%20no%20produto:%20CORONA" class="card-produto">
-        <img src="imgs/corona.jfif" alt="CORONA">
-        <div class="item-desc">
-          <h2>CORONA</h2>
-          <p>6x330 ML</p>
+        <div class="overview-card">
+          <div class="overview-card-image">
+            <img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?q=80&w=600" alt="Conveniência">
+          </div>
+          <div class="overview-card-content">
+            <div class="overview-card-header">
+              <div class="overview-icon-circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 8h12l1 9H5L6 8z" />
+                  <path d="M16 8A4 4 0 0 0 8 8" />
+                </svg>
+              </div>
+              <h3>CONVENIÊNCIA</h3>
+            </div>
+            <p class="overview-card-text">Produtos do dia a dia, higiene, limpeza e tudo que você precisa.</p>
+          </div>
         </div>
-      </a>
+      </div>
+    </section>
 
-      <a href="https://wa.me/556192190738?text=Olá!%20Tenho%20interesse%20no%20produto:%20SPATEN%20LATA" class="card-produto">
-        <img src="imgs/spaten.jfif" alt="SPATEN LATA">
-        <div class="item-desc">
-          <h2>SPATEN LATA</h2>
-          <p>12x350 ML</p>
-        </div>
-      </a>
+  </main>
 
-      <a href="https://wa.me/556192190738?text=Olá!%20Tenho%20interesse%20no%20produto:%20SMIRNOFF%20ICE" class="card-produto">
-        <img src="imgs/smiroff.jfif" alt="SMIRNOFF ICE">
-        <div class="item-desc">
-          <h2>SMIRNOFF ICE</h2>
-          <p>275 ML UNID.</p>
-        </div>
-      </a>
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="footer-container">
 
-      <a href="https://wa.me/556192190738?text=Olá!%20Tenho%20interesse%20no%20produto:%2051%20ICE%20LIMÃO" class="card-produto">
-        <img src="imgs/51.jfif" alt="51 ICE LIMÃO">
-        <div class="item-desc">
-          <h2>51 ICE LIMÃO</h2>
-          <p>275 ML UNID.</p>
-        </div>
-      </a>
+      <div class="footer-col">
+        <h4>
+          <i class="fa-solid fa-location-dot yellow-text"></i>
+          ENDEREÇO
+        </h4>
+        <p>
+          St. Hoteleiro Projeção E, 01<br>
+          Taguatinga Sul, Brasília - DF<br>
+          CEP: 72011-904
+        </p>
+      </div>
 
-      <a href="https://wa.me/556192190738?text=Olá!%20Tenho%20interesse%20no%20produto:%20OLD%20PARR%2012%20ANOS" class="card-produto">
-        <img src="imgs/oldparr.jfif" alt="OLD PARR 12 ANOS">
-        <div class="item-desc">
-          <h2>OLD PARR 12 ANOS</h2>
-          <p>1 LTR</p>
-        </div>
-      </a>
+      <div class="footer-col">
+        <h4>
+          <i class="fa-solid fa-clock yellow-text"></i>
+          HORÁRIO
+        </h4>
+        <p>
+          Segunda a Domingo<br>
+          08:00 às 03:00
+        </p>
+      </div>
 
-      <a href="https://wa.me/556192190738?text=Olá!%20Tenho%20interesse%20no%20produto:%20SÃO%20FRANCISCO" class="card-produto">
-        <img src="imgs/saofrancisco.jfif" alt="SÃO FRANCISCO">
-        <div class="item-desc">
-          <h2>SÃO FRANCISCO</h2>
-          <p>970 ML</p>
-        </div>
-      </a>
+      <div class="footer-col">
+        <h4>
+          <i class="fa-brands fa-whatsapp yellow-text"></i>
+          WHATSAPP
+        </h4>
+        <p>
+          (61) 9219-0738
+        </p>
+      </div>
 
-      <a href="https://wa.me/556192190738?text=Olá!%20Tenho%20interesse%20no%20produto:%20CAMPARI" class="card-produto">
-        <img src="imgs/campari.jfif" alt="CAMPARI">
-        <div class="item-desc">
-          <h2>CAMPARI</h2>
-          <p>998 ML</p>
-        </div>
-      </a>
+      <div class="footer-col">
+        <h4>
+          <i class="fa-brands fa-instagram yellow-text"></i>
+          INSTAGRAM
+        </h4>
+        <p>
+          @convenienciadom.oficial
+        </p>
+      </div>
 
     </div>
-  </section>
 
-  <section class="categoria-coluna">
-    <h2>Refrigerantes & outros</h2>
-
-    <div class="grid-produtos">
-
-      <a href="https://wa.me/556192190738?text=Olá!%20Tenho%20interesse%20no%20produto:%20COCA%20LT%20ZERO" class="card-produto">
-        <img src="imgs/coca.jfif" alt="COCA LT ZERO">
-        <div class="item-desc">
-          <h2>COCA LT ZERO</h2>
-          <p>06x310 ML</p>
-        </div>
-      </a>
-
-      <a href="https://wa.me/556192190738?text=Olá!%20Tenho%20interesse%20no%20produto:%20RED%20BULL" class="card-produto">
-        <img src="imgs/redbull.jfif" alt="RED BULL">
-        <div class="item-desc">
-          <h2>RED BULL</h2>
-          <p>250 ML UNID.</p>
-        </div>
-      </a>
-
-      <a href="https://wa.me/556192190738?text=Olá!%20Tenho%20interesse%20no%20produto:%20ÁGUA%20LA%20PRIORI%20S/GAS" class="card-produto">
-        <img src="imgs/lapriori.jfif" alt="ÁGUA LA PRIORI S/GAS">
-        <div class="item-desc">
-          <h2>ÁGUA LA PRIORI S/GAS</h2>
-          <p>06x1,5 ML</p>
-        </div>
-      </a>
-
-      <a href="https://wa.me/556192190738?text=Olá!%20Tenho%20interesse%20no%20produto:%20ÁGUA%20CRYSTAL%20C/GAS" class="card-produto">
-        <img src="imgs/aguagas.jfif" alt="ÁGUA CRYSTAL C/GAS">
-        <div class="item-desc">
-          <h2>ÁGUA CRYSTAL C/GAS</h2>
-          <p>15x500 ML</p>
-        </div>
-      </a>
-
-      <a href="https://wa.me/556192190738?text=Olá!%20Tenho%20interesse%20no%20produto:%20ÁGUA%20DUCOCO" class="card-produto">
-        <img src="imgs/ducoco.jfif" alt="ÁGUA DUCOCO">
-        <div class="item-desc">
-          <h2>ÁGUA DUCOCO</h2>
-          <p>200 ML UNID.</p>
-        </div>
-      </a>
-
-      <a href="https://wa.me/556192190738?text=Olá!%20Tenho%20interesse%20no%20produto:%20ROTHMANS%20BOX" class="card-produto">
-        <img src="imgs/rothmans.jfif" alt="ROTHMANS BOX">
-        <div class="item-desc">
-          <h2>ROTHMANS BOX</h2>
-          <p>PCT 10X</p>
-        </div>
-      </a>
-
+    <div class="footer-bottom">
+      <p>© 2026 Conveniência Dom - Todos os direitos reservados.</p>
     </div>
-  </section>
-
-</div>
-
-</main>
-
-<!-- ================= FOOTER ================= -->
-<footer>
-  <div class="footer-container">
-
-    <div class="footer-col">
-      <h4>
-        <i class="fa-solid fa-location-dot yellow-text"></i>
-        ENDEREÇO
-      </h4>
-      <p>
-        St. Hoteleiro Projeção E, 01<br>
-        Taguatinga Sul, Brasília - DF<br>
-        CEP: 72011-904
-      </p>
-    </div>
-
-    <div class="footer-col">
-      <h4>
-        <i class="fa-solid fa-clock yellow-text"></i>
-        HORÁRIO
-      </h4>
-      <p>
-        Segunda a Domingo<br>
-        08:00 às 03:00
-      </p>
-    </div>
-
-    <div class="footer-col">
-      <h4>
-        <i class="fa-brands fa-whatsapp yellow-text"></i>
-        WHATSAPP
-      </h4>
-      <p>
-        (61) 9219-0738
-      </p>
-    </div>
-
-    <div class="footer-col">
-      <h4>
-        <i class="fa-brands fa-instagram yellow-text"></i>
-        INSTAGRAM
-      </h4>
-      <p>
-        @convenienciadom.oficial
-      </p>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <p>© 2026 Conveniência Dom - Todos os direitos reservados.</p>
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>
