@@ -71,7 +71,7 @@ header {
 
 .header-container {
   width: 100%;
-  max-width: 2000px;
+  gap: 50px;
 
   margin: 0 auto;
   padding: 0 50px;
@@ -595,8 +595,10 @@ nav a:hover::after {
 }
 
 .card-produto img{
+  width: 120px;
   height:160px;
-  object-fit: cover;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 /* =========================================================
    FOOTER
