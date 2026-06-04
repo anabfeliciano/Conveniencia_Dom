@@ -1,67 +1,86 @@
 <!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conveniência Dom - Sobre Nós</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Caveat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <!-- LOGO -->
+        <a href="index.html" class="logo">
+          <i class="fa-solid fa-cart-shopping yellow-text"></i>
+          <span>CONVENIÊNCIA <b class="yellow-text">DOM</b></span>
+        </a>
 
-  <title>Conveniência Dom</title>
+        <!-- MENU -->
+        <nav>
+          <ul>
+            <li><a href="index.html">INÍCIO</a></li>
+            <li><a href="Produtos.html">PRODUTOS</a></li>
+            <li><a href="Diferenciais.html">DIFERENCIAIS</a></li>
+            <li><a href="Sobre_Nós.html">SOBRE NÓS</a></li>
+            <li><a href="Contato.html">CONTATO</a></li>
+          </ul>
+        </nav>
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Caveat:wght@700&display=swap" rel="stylesheet">
+        <!-- BOTÃO -->
+        <a href="https://wa.me/556192190738" class="btn-header" target="_blank">
+        <i class="fa-solid fa-comments"></i>
+        FALE CONOSCO
+      </a>
+    </header>
 
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <main>
+      <section class="sobre">
+        <div class="sobre-conteudo">
+          <span class="subtitle yellow-text">CONTATO</span>
+          <h1>
+            ESTAMOS AQUI
+            <span class="yellow-text">PARA <br> ATENDER VOCÊ!</span>
+          </h1>
+          <hr class="title-line" />
+          <p>
+            Tem alguma dúvida, sugestão ou deseja fazer um pedido? Fale com a gente pelos canais abaixo ou venha nos visitar. Será um prazer atendê-lo! Trabalhamos apenas com atendimento no local.
+          </p>
+        </div>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="stylesheet.css" />
-</head>
-
-<body>
-
-<!-- ================= HEADER ================= -->
-<header>
-  <div class="header-container">
-
-    <!-- LOGO CLICÁVEL -->
-    <a href="index.html" class="logo">
-      <i class="fa-solid fa-cart-shopping yellow-text"></i>
-      <span>CONVENIÊNCIA <b class="yellow-text">DOM</b></span>
-    </a>
-
-    <!-- MENU -->
-    <nav>
-      <ul>
-        <li><a href="index.html">INÍCIO</a></li>
-        <li><a href="Produtos.html">PRODUTOS</a></li>
-        <li><a href="Diferenciais.html">DIFERENCIAIS</a></li>
-        <li><a href="Sobre_Nós.html">SOBRE NÓS</a></li>
-        <li><a href="Contato.html">CONTATO</a></li>
-      </ul>
-    </nav>
-
-    <!-- BOTÃO -->
-    <a href="https://wa.me/556192190738" class="btn-header" target="_blank">
-      <i class="fa-solid fa-comments"></i>
-      FALE CONOSCO
-    </a>
-
-  </div>
-</header>
+        <div class="sobre-imagem">
+          <img src="imgs/Loja.png" alt="Fachada Conveniência Dom" />
+        </div>
+      </section>
 
 <!-- ================= MAIN ================= -->
 <main>
 
   <!-- ================= CONTEÚDO ================= -->
   <div class="fale-conosco">
-    <h2>Fale Conosco</h2>
+    <h2>
+      <i class="fa-solid fa-bullhorn yellow-text"></i>
+      Fale Conosco
+      <i class="fa-solid fa-bullhorn yellow-text flip"></i>
+    </h2>
     <hr class="title-line" />
 
     <div class="contact">
       <div class="img-contact"><img src="" alt=""></div>
       <div class="text-contact">
-        <p>WHATSAPP</p>
+        <h4>
+        <i class="fa-brands fa-whatsapp yellow-text"></i>
+        <span class="yellow-text">WHATSAPP</span>
+      </h4>
         <strong>(61) 9219-0738</strong>
         <p>Fale conosco!</p>
       </div>
@@ -72,7 +91,10 @@
         <img src="" alt="">
       </div>
       <div class="text-contact">
-        <p>TELEFONE</p>
+        <h4>
+        <i class="fa-solid fa-phone yellow-text"></i>
+        <span class="yellow-text">TELEFONE</span>
+        </h4>
         <strong>(61) 9219-0738</strong>
         <p>Atendimento durante o horário de funcionamento.</p>
       </div>
@@ -83,8 +105,11 @@
         <img src="" alt="">
       </div>
       <div class="text-contact">
-        <p>INSTAGRAM</p>
-        <strong>@convenienciadom</strong>
+        <h4>
+        <i class="fa-brands fa-instagram yellow-text"></i>
+        <span class="yellow-text">INSTAGRAM</span>
+      </h4>
+      
         <p>Siga-nos e fique por dentro das novidades</p>
       </div>
     </div>
@@ -99,52 +124,57 @@
     <div class="footer-col">
       <h4>
         <i class="fa-solid fa-location-dot yellow-text"></i>
-        ENDEREÇO
+        <span>ENDEREÇO</span>
       </h4>
+
       <p>
-        St. Hoteleiro Projeção E, 01<br>
+        St. Hoteleiro projeção E, 01<br>
         Taguatinga Sul, Brasília - DF<br>
         CEP: 72011-904
       </p>
     </div>
 
-    <div class="footer-col">
+        <div class="footer-col">
       <h4>
-        <i class="fa-solid fa-clock yellow-text"></i>
-        HORÁRIO
+        <i class="fa-brands fa-instagram yellow-text"></i>
+        <span>INSTAGRAM</span>
       </h4>
+
       <p>
-        Segunda a Domingo<br>
-        08:00 às 03:00
+       <a href="https://www.instagram.com/convenienciadom.oficial/" target="_blank">@convenienciadom.oficial</a>
       </p>
     </div>
 
     <div class="footer-col">
       <h4>
         <i class="fa-brands fa-whatsapp yellow-text"></i>
-        WHATSAPP
+        <span>WHATSAPP</span>
       </h4>
+
       <p>
-        (61) 9219-0738
+        (61) 9219-0738<br>
+        Fale conosco!
       </p>
     </div>
 
     <div class="footer-col">
       <h4>
-        <i class="fa-brands fa-instagram yellow-text"></i>
-        INSTAGRAM
+        <i class="fa-solid fa-clock yellow-text"></i>
+        <span>HORÁRIO DE FUNCIONAMENTO</span>
       </h4>
+
       <p>
-        @convenienciadom.oficial
+        Segunda a Domingo<br>
+        08:00 às 03:00
       </p>
     </div>
 
   </div>
 
   <div class="footer-bottom">
-    <p>© 2026 Conveniência Dom - Todos os direitos reservados.</p>
+    <p>Ana Beatriz Feliciano - Gabi - João</p>
+    <p>&copy; 2026 Conveniência Dom - Todos os direitos reservados.</p>
   </div>
 </footer>
-
 </body>
 </html>

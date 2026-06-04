@@ -19,6 +19,25 @@
 
   --text-white: #ffffff;
   --text-muted: #aaaaaa;
+
+  /* Tamanhos de Fonte */
+  --h1-size: 40px;
+  --h2-size: 28px;
+  --body-size: 16px;
+  --footer-size: 14px;
+}
+
+h1 {
+  font-size: var(--h1-size);
+}
+h2 {
+  font-size: var(--h2-size);
+}
+
+/* Para rodapés e textos secundários */
+.footer-col p,
+.footer-col a {
+  font-size: var(--footer-size);
 }
 
 /* =========================================================
@@ -32,6 +51,7 @@ body {
 
   background-color: var(--bg-color);
   color: var(--text-white);
+  font-size: var(--body-size); /* Definindo o base */
 
   line-height: 1.6;
   overflow-x: hidden;
@@ -48,11 +68,9 @@ main {
 }
 
 .container {
-  width: 100%;
-  max-width: 1500px;
-
+  width: 90%;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 0 5%;
 }
 
 /* =========================================================
@@ -60,6 +78,7 @@ main {
 ========================================================= */
 header {
   width: 100%;
+  height: 100px;
 
   background-color: var(--bg-color);
   border-bottom: 2px solid var(--primary-color);
@@ -70,25 +89,13 @@ header {
 }
 
 .header-container {
-  width: 100%;
-  gap: 50px;
-
-  margin: 0 auto;
-  padding: 0 50px;
-
-  height: 100px;
+  width: 90%; /* 100% - 5% de cada lado = 90% de largura */
+  margin: 0 auto; /* Centraliza a caixa de verdade em qualquer resolução */
+  height: 100px; /* Definido em um único lugar */
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-header .header-container {
-  height: 100px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* Joga a logo pra esquerda e o menu pro meio e o fale conosco para direita */
 }
 
 /* ===== LOGO ===== */
@@ -96,8 +103,6 @@ header .header-container {
   display: flex;
   align-items: center;
   gap: 10px;
-
-  font-size: 1.2rem;
   font-weight: 800;
   letter-spacing: 1px;
 
@@ -118,10 +123,8 @@ nav a {
 
   color: var(--text-white);
   text-decoration: none;
-
-  font-size: 13px;
   font-weight: 600;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 
 /* Linha ativa */
@@ -165,7 +168,6 @@ nav a:hover::after {
 
   text-decoration: none;
 
-  font-size: 13px;
   font-weight: 700;
 
   transition:
@@ -181,7 +183,9 @@ nav a:hover::after {
 /* =========================================================
    HERO
 ========================================================= */
-.sobre , .sobre-catalogo , .sobre-diferenciais {
+.sobre,
+.sobre-catalogo,
+.sobre-diferenciais {
   position: relative;
 
   display: flex;
@@ -189,8 +193,8 @@ nav a:hover::after {
 
   overflow: hidden;
 
-  background: #000000;
-  padding: 0 50px;
+  background: var(--bg-color);
+  padding: 0 5%;
 }
 
 .sobre {
@@ -210,7 +214,6 @@ nav a:hover::after {
 }
 
 .sobre-conteudo .subtitle {
-  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 2px;
 }
@@ -218,7 +221,6 @@ nav a:hover::after {
 .sobre-conteudo h1 {
   margin-top: 15px;
 
-  font-size: 3rem;
   font-weight: 800;
   line-height: 1.2;
 }
@@ -233,7 +235,6 @@ nav a:hover::after {
 
 .sobre-conteudo p {
   color: var(--text-muted);
-  font-size: 1.1rem;
 }
 
 /* ===== IMAGEM ===== */
@@ -308,14 +309,12 @@ nav a:hover::after {
 
   margin-bottom: 20px;
 
-  font-size: 1.5rem;
   font-weight: 700;
 }
 
 .story-text p {
   color: var(--text-muted);
 
-  font-size: 1rem;
   text-align: justify;
 }
 
@@ -390,6 +389,7 @@ nav a:hover::after {
 .team-card {
   display: flex;
   flex-direction: column;
+  max-width: 45%;
 
   padding: 35px;
   border-radius: 20px;
@@ -470,7 +470,7 @@ nav a:hover::after {
 
 /* Texto manuscrito */
 .script-text {
-  margin-top: -10px !important;
+  margin-top: 20px !important;
 
   color: var(--primary-color) !important;
 
@@ -567,7 +567,7 @@ nav a:hover::after {
 
   border-radius: 15px;
   background-color: var(--card-bg);
-  border: 3px solid var(--border-color);
+  border: 1px solid var(--primary-color);
   border-radius: 40px;
 }
 
@@ -583,14 +583,17 @@ nav a:hover::after {
   font-weight: 800;
 }
 
+.flip {
+  transform: scaleX(-1);
+}
+
 /* =========================================================
    FOOTER
 ========================================================= */
 footer {
-  margin-top: 100px;
-  padding: 60px 0 30px;
-
-  background-color: #050505;
+  margin-top: 100px;  
+  padding: 30px 0 15px;
+  background-color: var(--card-bg);
   border-top: 1px solid var(--border-color);
 }
 
@@ -598,54 +601,48 @@ footer {
 .footer-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 0 5%;
 }
 
-/* ===== COLUNAS (LINHAS ENTRE ELAS) ===== */
+/* ===== COLUNAS ===== */
 .footer-col {
-  padding-right: 20px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  padding: 0 30px;
+}
+
+/* ===== LINHAS DIVISÓRIAS ===== */
+.footer-col:not(:last-child) {
   border-right: 1px solid var(--border-color);
 }
 
-/* remove linha da última coluna */
-.footer-col:last-child {
-  border-right: none;
-}
-
-/* ===== TÍTULO (ÍCONE + TEXTO) ===== */
+/* ===== TÍTULOS ===== */
 .footer-col h4 {
   display: flex;
-  align-items: flex-start; /* chave da solução */
+  align-items: center;
+  justify-content: center;
   gap: 10px;
-
-  font-size: 0.9rem;
+   margin-bottom: 10px;
+  
+  font-size: var(--footer-size);
   font-weight: 700;
   color: var(--primary-color);
-  line-height: 1.2;
-}
-
-.footer-col h4 i {
-  margin-top: 2px; /* empurra levemente pra alinhar com “HORÁRIO” */
 }
 
 .footer-col h4 span {
-  display: inline-block;
+  line-height: 1.3;
 }
 
-/* ===== TEXTO ===== */
+/* ===== TEXTOS ===== */
 .footer-col p,
 .footer-col a {
   color: var(--text-muted);
-
   text-decoration: none;
-
-  font-size: 0.9rem;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .footer-col a:hover {
@@ -654,8 +651,8 @@ footer {
 
 /* ===== COPYRIGHT ===== */
 .footer-bottom {
-  margin-top: 60px;
-  padding-top: 30px;
+  margin-top: 25px;
+  padding-top: 15px;
 
   text-align: center;
 
@@ -777,7 +774,7 @@ footer {
 }
 
 .overview-title span::after {
-  content: '';
+  content: "";
   display: block;
   width: 50px;
   height: 3px;
@@ -801,7 +798,9 @@ footer {
   max-width: 380px;
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   border: 1px solid var(--border-color);
 }
 

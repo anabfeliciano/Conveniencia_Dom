@@ -85,3 +85,46 @@ max-width	limitar crescimento
 | Centralização?      | `flex/grid`           |
 | Aparência do botão? | `.btn`                |
 
+
+
+
+
+        <section class="values-team">
+          <div class="values-side">
+            <h2 class="section-title">
+              <i class="fa-solid fa-heart yellow-text"></i> NOSSOS
+              <span class="yellow-text">VALORES</span>
+            </h2>
+
+            <div class="value-item">
+              <i class="fa-solid fa-award value-icon"></i>
+              <div>
+                <h3>QUALIDADE</h3>
+                <p>Selecionamos os melhores produtos para você.</p>
+              </div>
+            </div>
+
+            <div class="value-item">
+              <i class="fa-solid fa-handshake value-icon"></i>
+              <div>
+                <h3>CONFIANÇA</h3>
+                <p>Transparência e respeito em cada atendimento.</p>
+              </div>
+            </div>
+
+            <div class="value-item">
+              <i class="fa-solid fa-users value-icon"></i>
+              <div>
+                <h3>PRATICIDADE</h3>
+                <p>Tudo o que você precisa, pertinho de você.</p>
+              </div>
+            </div>
+
+            <div class="value-item">
+              <i class="fa-solid fa-face-smile value-icon"></i>
+              <div>
+                <h3>ACOLHIMENTO</h3>
+                <p>Um ambiente feito para você se sentir bem.</p>
+              </div>
+            </div>
+          </div>
