@@ -61,6 +61,18 @@ main {
   flex: 1;
 }
 /* =========================================================
+   NAV ACTIVE
+========================================================= */
+nav a.active {
+    color: #FFD700;
+    font-weight: 700;
+}
+
+nav a.active::after {
+    width: 100%;
+}
+
+/* =========================================================
    CLASSES UTILITÁRIAS
 ========================================================= */
 .yellow-text {
@@ -178,6 +190,153 @@ nav a:hover::after {
 .btn-header:hover {
   background-color: #e0a300;
   transform: scale(1.03);
+}
+
+/* =========================================================
+   HOME - AJUSTES
+========================================================= */
+
+.home-products {
+  padding: 20px 0 80px;
+}
+
+.home-products-description {
+  max-width: 700px;
+
+  margin: 20px auto 50px;
+
+  text-align: center;
+
+  color: var(--text-muted);
+}
+
+/* BOTÃO ABAIXO DOS PRODUTOS */
+.home-products-button {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 50px;
+}
+
+.btn-products {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 28px;
+
+  border: 1px solid var(--primary-color);
+  border-radius: 50px;
+
+  color: var(--primary-color);
+  text-decoration: none;
+
+  font-weight: 700;
+  letter-spacing: 0.5px;
+
+  transition: all 0.3s ease;
+}
+
+.btn-products:hover {
+  background-color: var(--primary-color);
+  color: #000;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   HORÁRIO DE FUNCIONAMENTO
+========================================================= */
+
+.home-hours {
+  padding: 30px 0 80px;
+}
+
+.hours-content {
+  max-width: 500px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.hours-line {
+  width: 70px;
+  height: 2px;
+
+  margin: 0 auto 30px;
+
+  background-color: var(--primary-color);
+}
+
+.hours-content h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  margin-bottom: 20px;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.hours-content p {
+  color: var(--text-muted);
+
+  margin-bottom: 10px;
+}
+
+.hours-content strong {
+  display: block;
+
+  margin-bottom: 30px;
+
+  color: var(--primary-color);
+
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   FRASE FINAL
+========================================================= */
+
+.home-message {
+  padding-bottom: 20px;
+}
+
+.home-message .script-text {
+  margin: 0 !important;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE HOME
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .home-products {
+    padding: 0 0 60px;
+  }
+
+  .home-products-description {
+    margin-bottom: 35px;
+  }
+
+  .btn-products {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  .hours-content strong {
+    font-size: 1.7rem;
+  }
+
 }
 
 /* =========================================================
@@ -902,4 +1061,205 @@ footer {
   .footer-col h4 {
     justify-content: center;
   }
+}
+
+/* =========================================================
+   DIFERENCIAIS
+========================================================= */
+
+.differentials-section{
+    padding: 20px 0 80px;
+}
+
+.differential-item{
+    display: grid;
+    grid-template-columns: 90px 1fr;
+
+    gap: 35px;
+
+    padding: 45px 0;
+
+    border-bottom: 1px solid var(--border-color);
+}
+
+.differential-item:first-child{
+    border-top: 1px solid var(--border-color);
+}
+
+.differential-number{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+
+    opacity: 0.9;
+}
+
+.differential-content h2{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-bottom: 18px;
+
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.differential-content h2 i{
+    font-size: 1.4rem;
+}
+
+.differential-content p{
+    color: var(--text-muted);
+
+    line-height: 1.9;
+
+    max-width: 850px;
+}
+
+
+/* =========================================================
+   NÚMEROS DO DOM
+========================================================= */
+
+.dom-numbers{
+    padding: 90px 0;
+}
+
+.dom-numbers .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 30px;
+}
+
+.number-card{
+    text-align: center;
+
+    padding: 40px 30px;
+
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+
+    transition: 0.3s ease;
+}
+
+.number-card:hover{
+    border-color: var(--primary-color);
+
+    transform: translateY(-6px);
+}
+
+.number-card h2{
+    font-size: 2.2rem;
+    font-weight: 800;
+
+    margin-bottom: 15px;
+}
+
+.number-card p{
+    color: var(--text-muted);
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   NOSSA PROMESSA
+========================================================= */
+
+.dom-promise{
+    padding: 30px 0 90px;
+}
+
+.dom-promise .container{
+    max-width: 900px;
+
+    text-align: center;
+}
+
+.dom-promise h2{
+    font-size: 2.2rem;
+
+    margin-bottom: 25px;
+}
+
+.dom-promise .title-line{
+    margin: 0 auto 35px;
+}
+
+.dom-promise p{
+    color: var(--text-muted);
+
+    font-size: 1.05rem;
+    line-height: 2;
+}
+
+.dom-promise .script-text{
+    display: block;
+
+    margin-top: 35px;
+
+    font-size: 2rem;
+
+    color: var(--primary-color);
+}
+
+
+/* =========================================================
+   BANNER FINAL
+========================================================= */
+
+.middle-banner{
+    margin-top: 30px;
+}
+
+.banner-item p{
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+========================================================= */
+
+@media (max-width: 900px){
+
+    .dom-numbers .container{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 768px){
+
+    .differential-item{
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        padding: 35px 0;
+    }
+
+    .differential-number{
+        font-size: 2.5rem;
+    }
+
+    .differential-content h2{
+        font-size: 1.35rem;
+    }
+
+    .dom-promise h2{
+        font-size: 1.8rem;
+    }
+
+    .number-card h2{
+        font-size: 1.9rem;
+    }
+
+    .dom-promise .script-text{
+        font-size: 1.7rem;
+    }
+
 }
