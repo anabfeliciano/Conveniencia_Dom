@@ -17,31 +17,31 @@
     <link rel="stylesheet" href="stylesheet.css" />
   </head>
   <body>
-    <header>
-      <div class="header-container">
-        <!-- LOGO -->
-        <a href="index.html" class="logo">
-          <i class="fa-solid fa-cart-shopping yellow-text"></i>
-          <span>CONVENIÊNCIA <b class="yellow-text">DOM</b></span>
-        </a>
+<header>
+  <div class="header-container">
 
-        <!-- MENU -->
-        <nav>
-          <ul>
-            <li><a href="index.html">INÍCIO</a></li>
-            <li><a href="Produtos.html" class="active">PRODUTOS</a></li>
-            <li><a href="Diferenciais.html">DIFERENCIAIS</a></li>
-            <li><a href="Sobre_Nós.html">SOBRE NÓS</a></li>
-            <li><a href="Contato.html">CONTATO</a></li>
-          </ul>
-        </nav>
+    <a href="index.html" class="logo">
+      <i class="fa-solid fa-cart-shopping yellow-text"></i>
+      <span>CONVENIÊNCIA <b class="yellow-text">DOM</b></span>
+    </a>
 
-        <!-- BOTÃO -->
-        <a href="https://wa.me/556192190738" class="btn-header" target="_blank">
-        <i class="fa-solid fa-comments"></i>
-        FALE CONOSCO
-      </a>
-    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">INÍCIO</a></li>
+        <li><a href="Produtos.html" class="active">PRODUTOS</a></li>
+        <li><a href="Diferenciais.html">DIFERENCIAIS</a></li>
+        <li><a href="Sobre_Nós.html">SOBRE NÓS</a></li>
+        <li><a href="Contato.html">CONTATO</a></li>
+      </ul>
+    </nav>
+
+    <a href="https://wa.me/556192190738" class="btn-header" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i>
+      FALE CONOSCO
+    </a>
+
+  </div>
+</header>
 
     <main>
       <section class="sobre">
@@ -66,11 +66,33 @@
     <!-- SEÇÃO DE PRODUTOS (VISÃO GERAL) -->
     <section class="products-overview">
       <h2 class="overview-title">NOSSOS <span>PRODUTOS</span></h2>
-
+      
+      <!-- CONTAINER ÚNICO PARA A GRID -->
       <div class="overview-cards-container">
+        
+        <!-- CARD 1: CONVENIÊNCIA -->
         <div class="overview-card">
           <div class="overview-card-image">
-            <img src="https://www.multifrio.com.br/uploads/conteudo/conteudo/2018/07/fmvB8/adega-climatizada-residencial-case1-2_600x450.jpg" alt="Adega">
+            <img src="imgs/conveniencia.png" alt="Conveniência">
+          </div>
+          <div class="overview-card-content">
+            <div class="overview-card-header">
+              <div class="overview-icon-circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 8h12l1 9H5L6 8z" />
+                  <path d="M16 8A4 4 0 0 0 8 8" />
+                </svg>
+              </div>
+              <h3>CONVENIÊNCIA</h3>
+            </div>
+            <p class="overview-card-text">Itens essenciais para o dia a dia e emergências. Pilhas, isqueiros, carvão, gelo, fósforos, velas e lâmpadas.</p>
+          </div>
+        </div>
+
+        <!-- CARD 2: ADEGA -->
+        <div class="overview-card">
+          <div class="overview-card-image">
+            <img src="imgs/bebidas.png" alt="Adega">
           </div>
           <div class="overview-card-content">
             <div class="overview-card-header">
@@ -85,9 +107,10 @@
           </div>
         </div>
 
+        <!-- CARD 3: SNACKS -->
         <div class="overview-card">
           <div class="overview-card-image">
-            <img src="https://harvestplanet.ca//wp-content/uploads/2020/10/products-snacks-medium_1-563x393.jpg" alt="Snacks">
+            <img src="imgs/snacks.png" alt="Snacks">
           </div>
           <div class="overview-card-content">
             <div class="overview-card-header">
@@ -103,23 +126,24 @@
           </div>
         </div>
 
+        <!-- CARD 4: HIGIENE E LIMPEZA -->
         <div class="overview-card">
           <div class="overview-card-image">
-            <img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?q=80&w=600" alt="Conveniência">
+            <img src="imgs/limpeza.png" alt="Itens de higiene">
           </div>
           <div class="overview-card-content">
             <div class="overview-card-header">
               <div class="overview-icon-circle">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M6 8h12l1 9H5L6 8z" />
-                  <path d="M16 8A4 4 0 0 0 8 8" />
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                 </svg>
               </div>
-              <h3>CONVENIÊNCIA</h3>
+              <h3>HIGIENE E LIMPEZA</h3>
             </div>
-            <p class="overview-card-text">Produtos do dia a dia, higiene, limpeza e tudo que você precisa.</p>
+            <p class="overview-card-text">Sabonetes, shampoos, creme dental, papel higiênico e muito mais para o seu dia a dia.</p>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -161,10 +185,14 @@
         <strong>WHATSAPP</storng>
       </h4>
 
-      <p>
-        (61) 9219-0738<br>
-        Fale conosco!
-      </p>
+          <p>
+            <a
+              href="https://wa.me/556192190738"
+              target="_blank">
+              (61) 9219-0738<br />
+            Fale conosco!
+            </a>            
+          </p>
     </div>
 
     <div class="footer-col">
@@ -182,7 +210,7 @@
   </div>
 
   <div class="footer-bottom">
-    <p>Ana Beatriz Feliciano - Gabi - João</p>
+    <p>Ana Beatriz Feliciano - Gabriella Batista Cecilio Negromonte - João Pedro Brito</p>
     <p>&copy; 2026 Conveniência Dom - Todos os direitos reservados.</p>
   </div>
 </footer>
